@@ -1,0 +1,80 @@
+.nav{
+display: flex;
+width: 100vw;
+padding: 0.75rem 2rem;
+align-items: flex-end;
+gap: 1rem;
+border-bottom: 1px solid #D9D9D9;
+background: var(--Black-100, #FFF);
+padding-left: 16%;
+align-items: center;
+font-family: 'Darker Grotesque', sans-serif;
+}
+.help-logo{
+    width: 0.875rem;
+    height: 0.875rem;
+    color: #4D4D4D;
+    justify-content: center;
+}
+.help{
+color: #4D4D4D;
+font-family: Galano Grotesque;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1rem; 
+justify-content: center;
+
+}
+.help-container{
+    /* justify-content: center; */
+    padding-top: 1%;
+}
+.payout{
+    color: #1A181E;
+    font-family: serif !important;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem;
+}
+.search-input{
+display: flex;
+width: 25rem;
+padding: 0.5625rem 1rem;
+align-items: center;
+gap: var(--Spacing-spacing-04, 0.5rem);
+flex-shrink: 0;
+align-self: stretch;
+border-radius: 0.375rem;
+background: #F2F2F2;
+}
+input{
+    background: #F2F2F2;
+    font-family: Galano Grotesque;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.375rem;
+    width: 25rem;
+    border: none;
+    outline: none;
+}
+.group{
+    background:#E6E6E6;;
+    padding: 10px;
+    border-radius: 50%;
+}
+.third-div{
+display: flex;
+justify-content: flex-end;
+align-items: flex-start;
+gap: var(--Spacing-spacing-04, 0.5rem);
+flex: 1 0 0;
+}
+.first-div{
+display: flex;
+align-items: center;
+gap: 1rem;
+flex: 1 0 0;
+}

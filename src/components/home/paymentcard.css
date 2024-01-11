@@ -1,0 +1,37 @@
+.main{
+    font-family: 'Galano Grotesque', sans-serif;
+    font-weight: 500;
+}
+.order{
+    display: flex;
+    justify-content: space-between;
+
+}
+.order-arrow{
+    justify-content: center;
+    align-items: center;
+}
+.date{
+    color: var(--Black-95, #F2F2F2);
+    font-family: Galano Grotesque;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem; /* 142.857% */
+}
+.time{
+    color: var(--Black-95, #F2F2F2);
+    font-family: Galano Grotesque;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem; /* 142.857% */
+}
+.payout-date{
+    display: flex;
+    /* width: 24.16688rem; */
+    padding: var(--Spacing-spacing-04, 0.5rem) 1.5rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
