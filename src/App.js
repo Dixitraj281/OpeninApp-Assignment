@@ -1,40 +1,45 @@
 import './App.css';
+import { useState } from 'react';
 import Navbar from './components/navbar';
 import Sidebar, { SidebarItems } from './components/sidebar';
 import Homepage from './components/home'
 import{
-  Home,
-  MenuSquare,
   LayoutGrid,
-  Truck,
-  Volume1,
-  BarChart4,
-  Banknote,
-  BadgePercent,
-  Users,
-  Palette,
-  Zap,
+  BarChart2,
+  Ticket,
+  MenuSquare,
+  CalendarDays,
+  Bell,
+  Settings
 } from "lucide-react"
+import Signin from './components/Login/signin';
 
 function App() {
+  const [isLoggedIn, setLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    setLoggedIn(true);
+  };
+
   return (
     <div className="App flex flex-col relative">
-      <Navbar/>
-      <Homepage/>
-      <Sidebar>
-        <SidebarItems icon={<Home size={20}/>} text="Home"/>
-        <SidebarItems icon={<MenuSquare size={20}/>} text="Orders"/>
-        <SidebarItems icon={<LayoutGrid size={20}/>} text="Products"/>
-        <SidebarItems icon={<Truck size={20}/>} text="Delivery" alert/>
-        <SidebarItems icon={<Volume1 size={20}/>} text="Marketing"/>
-        <SidebarItems icon={<BarChart4 size={20}/>} text="Analytics" />
-        <SidebarItems icon={<Banknote size={20}/>} text="Payout" active/>
-        <SidebarItems icon={<BadgePercent size={20}/>} text="Discounts"/>
-        <SidebarItems icon={<Users size={20}/>} text="Audience"/>
-        <SidebarItems icon={<Palette size={20}/>} text="Appearance"/>
-        <SidebarItems icon={<Zap size={20}/>} text="Plugins"/>
-      </Sidebar>
-     
+      {isLoggedIn ? (
+        <>
+          <Navbar />
+          <Homepage />
+          <Sidebar>
+            <SidebarItems icon={<LayoutGrid size={20} />} text="Dashboard" />
+            <SidebarItems icon={<BarChart2 size={20} />} text="Upload" active />
+            <SidebarItems icon={<Ticket size={20} />} text="Invoice" />
+            <SidebarItems icon={<MenuSquare size={20} />} text="Schedule" alert />
+            <SidebarItems icon={<CalendarDays size={20} />} text="Calendar" />
+            <SidebarItems icon={<Bell size={20} />} text="Notification" />
+            <SidebarItems icon={<Settings size={20} />} text="Settings" />
+          </Sidebar>
+        </>
+      ) : (
+        <Signin onLogin={handleLogin} />
+      )}
     </div>
   );
 }

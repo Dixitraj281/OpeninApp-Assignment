@@ -4,8 +4,7 @@ width: 100vw;
 padding: 0.75rem 2rem;
 align-items: flex-end;
 gap: 1rem;
-border-bottom: 1px solid #D9D9D9;
-background: var(--Black-100, #FFF);
+background: #F3F4F6;
 padding-left: 16%;
 align-items: center;
 font-family: 'Darker Grotesque', sans-serif;
@@ -37,6 +36,7 @@ justify-content: center;
     font-style: normal;
     font-weight: 500;
     line-height: 1.75rem;
+    padding-left: 15px;
 }
 .search-input{
 display: flex;
@@ -61,7 +61,6 @@ input{
     outline: none;
 }
 .group{
-    background:#E6E6E6;;
     padding: 10px;
     border-radius: 50%;
 }

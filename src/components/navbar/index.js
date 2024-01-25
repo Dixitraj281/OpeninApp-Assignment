@@ -1,34 +1,20 @@
 // Navbar.jsx
 import React from 'react';
 import "./navbar.css"
-import {HelpCircle, Search} from 'lucide-react';
-import Group from "../../Assets/Group.svg"
-import Menu from "../../Assets/Menu.svg"
+import {Bell} from "lucide-react"
+import Menu from "../../Assets/me.jpg"
 const Navbar = () => {
   return (
-    <nav className='nav  '>
+    <nav className='nav '>
     <span className='first-div'>
-      <span className='text-[#1A181E] payout'>Payout</span>
-      <span className='flex help-container'>
-      <HelpCircle className='help-logo'/>
-      <span className='flex help pl-2'> How it works</span>
-      </span>
-      </span>
-      <div className="search-input">
-      <button>
-        <Search size={20} className='grayscale-1 text-[#808080]'/>
-      </button>
-      <input
-        type="text"
-        placeholder="Search features, tutorials, etc."
-      />
-    </div>
+      <span className='text-[#1A181E] payout'>Upload Csv</span>
+    </span>
     <span className='third-div'>
     <div className='group'>
-    <img src={Group} alt="group-logo" />
+    <Bell className='h-8 w-10'/>
     </div>
-    <div className='menu'>
-    <img src={Menu} alt="menu-logo" />
+    <div className='menu h-11 w-11 rounded-full'>
+    <img src={Menu} alt="menu-logo" className='rounded-full h-11 w-11' />
     </div>
     </span>
     </nav>
