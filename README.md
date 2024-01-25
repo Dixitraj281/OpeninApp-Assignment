@@ -38,6 +38,10 @@ The Table component displays an overview section with information about data dum
 ## Styling
 Styling is achieved using Tailwind CSS, a utility-first CSS framework and external css files.
 
+## Credentials
+1. username = username
+2. password = password
+
 
 <<<<<<< HEAD
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
