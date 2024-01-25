@@ -1,32 +1,45 @@
-# Getting Started with Create React App
+# Dukaan Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+This is a project for my @Dukaan assignment, where I have implemented Reactjs and Tailwind Css.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Table of Contents
+- [Installation](#installation)
+- [Project_Overview](#project_overview)
+- [Deployment](#deployment)
 
-### `npm start`
+  ---
+  
+## Installation
+1. Clone the repository: `git clone https://github.com/your-username/dukaan-assignment.git`
+2. Navigate to the project directory: `cd dukaan-assignment`
+3. Install dependencies: `npm install`
+4. Run the Project:  `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# project_overview
+This React web application implements a dashboard-style interface with several components for navigation, overview, and transaction details.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Components Overview
+### Sidebar
+The Sidebar component creates a fixed sidebar with a collapsible menu. It includes a logo, the application name ("Dukaan"), a link to visit the store, and information about available credits. The sidebar can be expanded or collapsed using ChevronUp and ChevronDown icons.
 
-### `npm test`
+### Navbar
+The Navbar component represents the top navigation bar with links for "Payout," a help icon with the text "How it works," and a search input field. Icons for a user group and a menu are also included.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Home Page
+The Table component displays an overview section with information about next payouts, amounts pending, and amounts processed. It also includes a table with transaction details for the current month.
 
-### `npm run build`
+## Dependencies
+1. React.js
+2. Lucide Icons Library
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Styling
+Styling is achieved using Tailwind CSS, a utility-first CSS framework and external css files.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
+<<<<<<< HEAD
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
@@ -69,3 +82,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # OpeninApp-Assignment
+=======
+>>>>>>> origin/main
